@@ -109,5 +109,5 @@ module.exports = {
   updateUser,
   deleteUser,
   createUser,
-  getJwtToken,
+//  getJwtToken,
 };
