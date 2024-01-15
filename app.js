@@ -14,8 +14,8 @@ app.use("/api/toys", toyRouter);
 
 //Home page
 app.get("/", (req, res) => {
-  //res.status(200).sendFile(__dirname + "/src/view/index.html");
-  res.send({mes:"working"})
+  res.status(200).sendFile(__dirname + "/src/view/index.html");
+  //res.send({mes:"working"})
 });
 
 //route not found error
