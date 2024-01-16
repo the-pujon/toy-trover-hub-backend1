@@ -1,5 +1,5 @@
 const User = require("../model/user.schema");
-//var jwt = require("jsonwebtoken");
+var jwt = require("jsonwebtoken");
 
 /**
  * (Create)
@@ -102,6 +102,15 @@ const deleteUser = async (req, res) => {
 
 //  res.send({ token });
 //};
+// JWT token sending
+const getJwtToken = async (req, res) => {
+  const token = jwt.sign(req.body, process.env.SECRET_ACCESS_TOKEN, {
+    expiresIn: "5h",
+  });
+  res.send({ token });
+};
+
+
 
 module.exports = {
   getAllUsers,
@@ -109,5 +118,5 @@ module.exports = {
   updateUser,
   deleteUser,
   createUser,
-//  getJwtToken,
+  getJwtToken,
 };
