@@ -11,3 +11,5 @@ const paymentSchema = mongoose.Schema({
   },
   email: { type: String, require: true },
 });
+
+module.exports = mongoose.model('Payment', paymentSchema)
