@@ -3,6 +3,7 @@ const cors = require("cors");
 require("./src/config/db");
 const userRouter = require("./src/routes/user.routes");
 const toyRouter = require("./src/routes/toy.routes");
+const paymentsRouter = require('./src/routes/payment.routes')
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/toys", toyRouter);
+app.use("/api", paymentsRouter);
 
 //Home page
 app.get("/", (req, res) => {
