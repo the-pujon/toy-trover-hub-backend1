@@ -3,19 +3,19 @@ const {createPayment, getAllPayments, getPaymentByEmail, getPaymentById, deleteP
 
 
 // Create a new payment
-router.post('/payments', createPayment);
+router.post('/', createPayment);
 
 // Get all payments
-router.get('/payments', getAllPayments);
+router.get('/', getAllPayments);
 
 // Get payment by email
-router.get('/payments/email/:email', getPaymentByEmail);
+router.get('/email/:email', getPaymentByEmail);
 
 // Get payment by ID
-router.get('/payments/id/:id', getPaymentById);
+router.get('/id/:id', getPaymentById);
 
 // Delete payment by ID
-router.delete('/payments/id/:id', deletePaymentById);
+router.delete('/id/:id', deletePaymentById);
 
 // Export the router
 module.exports = router;

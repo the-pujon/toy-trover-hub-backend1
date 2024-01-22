@@ -4,6 +4,7 @@ require("./src/config/db");
 const userRouter = require("./src/routes/user.routes");
 const toyRouter = require("./src/routes/toy.routes");
 const paymentsRouter = require('./src/routes/payment.routes')
+const ordersRouter = require("./src/routes/order.routes")
 
 const app = express();
 
@@ -12,7 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/toys", toyRouter);
-app.use("/api", paymentsRouter);
+app.use("/api/payments", paymentsRouter);
+app.use("/api/payments", paymentsRouter);
+app.use("/api/orders", ordersRouter);
 
 //Home page
 app.get("/", (req, res) => {
