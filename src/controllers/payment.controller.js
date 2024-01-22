@@ -1,4 +1,4 @@
-const Payment = require("../model/payment.schema")
+const Payment = require("../model/payment.schema");
 
 // Create a new payment
 const createPayment = async (req, res) => {
@@ -84,10 +84,33 @@ const deletePaymentById = async (req, res) => {
   }
 };
 
+//Update payment by order id
+const updatePaymentByOrderId = async (req, res) => {
+  const orderId = req.params.orderId;
+  console.log(orderId);
+  try {
+    const updatedPayment = await Payment.findOneAndUpdate(
+      { orderId: orderId },
+      req.body,
+      { new: true }
+    );
+
+    if (!updatedPayment) {
+      return res.status(404).json({ message: 'Payment not found' });
+    }
+
+    console.log(updatedPayment);
+    res.status(200).json(updatedPayment);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
-    createPayment,
-    deletePaymentById,
-    getAllPayments,
-    getPaymentByEmail,
-    getPaymentById
-}
+  createPayment,
+  deletePaymentById,
+  getAllPayments,
+  getPaymentByEmail,
+  getPaymentById,
+  updatePaymentByOrderId
+};

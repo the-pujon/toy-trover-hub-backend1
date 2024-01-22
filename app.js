@@ -92,7 +92,7 @@ app.post("/api/checkout", async (req, res) => {
     payment_method_types: ["card"],
     line_items: lineItems,
     mode: "payment",
-    success_url: `${process.env.FRONTEND_URL}/${Orders._id}`,
+    success_url: `${process.env.FRONTEND_URL}/paymentSuccess/${Orders._id}`,
     cancel_url: `${process.env.FRONTEND_URL}`,
   });
 
