@@ -1,169 +1,89 @@
 const toySchema = require("../model/toy.schema");
 
-/**
- * (Create)
- * for creating new toy
- */
 const createToy = async (req, res) => {
   try {
-    console.log(req.body);
-
-    const {
-      name,
-      sellerName,
-      sellerEmail,
-      sellerImage,
-      toyImage,
-      category,
-      subcategory,
-      inStock,
-      description,
-      price,
-    } = req.body;
-    const newToy = new toySchema({
-      name: name,
-      sellerName: sellerName,
-      sellerEmail: sellerEmail,
-      sellerImage: sellerImage,
-      toyImage: toyImage,
-      category: category,
-      subcategory: subcategory,
-      inStock: inStock,
-      description: description,
-      price: price,
-    });
+    const newToy = new toySchema(req.body);
     await newToy.save();
-    res.status(200).json(newToy);
+    res.status(201).json(newToy);
   } catch (error) {
-    res.status(500).send(error);
+    console.error(error);
+    res.status(500).send("Error creating toy");
   }
 };
 
-/**
- * (read)
- * for getting all toys
- * getting all toys by email, category and subCategory
- */
 const getToys = async (req, res) => {
   try {
-    const category = req.query.category;
-    const subcategory = req?.query?.subcategory;
-    const email = req?.query?.email;
-    //console.log(email);
+    const { category, subcategory, email } = req.query;
 
     if (email) {
       if (category) {
-        const toysByCategory = await toySchema.find({
-          category: req.query.category,
-          sellerEmail: req.query.email,
-        });
-
+        const toys = await toySchema.find({ category, sellerEmail: email });
         if (subcategory) {
           const toysBySubcategory = await toySchema.find({
-            category: req.query.category,
-            subcategory: req?.query?.subcategory,
-            sellerEmail: req.query.email,
+            category,
+            subcategory,
+            sellerEmail: email,
           });
           res.status(200).json(toysBySubcategory);
         } else {
-          res.status(200).json(toysByCategory);
+          res.status(200).json(toys);
         }
       } else {
-        console.log("here");
-        const toysByEmail = await toySchema.find({
-          sellerEmail: req.query.email,
-        });
-        return res.status(200).json(toysByEmail);
+        const toysByEmail = await toySchema.find({ sellerEmail: email });
+        res.status(200).json(toysByEmail);
       }
-    }
-
-    if (category && !email) {
-      const toysByCategory = await toySchema.find({
-        category: req.query.category,
-      });
-
+    } else if (category) {
+      const toys = await toySchema.find({ category });
       if (subcategory) {
-        console.log("in");
         const toysBySubcategory = await toySchema.find({
-          category: req.query.category,
-          subcategory: req?.query?.subcategory,
+          category,
+          subcategory,
         });
-        console.log(toysByCategory);
         res.status(200).json(toysBySubcategory);
       } else {
-        res.status(200).json(toysByCategory);
+        res.status(200).json(toys);
       }
-    }
-
-    if (!email && !category) {
+    } else {
       const toys = await toySchema.find();
-
       res.status(200).json(toys);
     }
   } catch (error) {
-    res.status(500).send(error);
+    console.error(error);
+    res.status(500).send("Error fetching toys");
   }
 };
 
-/**
- * (read)
- * for getting single toy
- */
 const getSingleToy = async (req, res) => {
   try {
-    console.log("ggg" + req.params.id);
-    const id = req.params.id;
-    const toySingle = await toySchema.findById(id).exec();
-    //const toySingle = await toySchema.find({ _id:id });
-    console.log(toySingle);
+    const toySingle = await toySchema.findById(req.params.id);
     res.status(200).json(toySingle);
   } catch (error) {
-    res.status(500).send(error);
+    console.error(error);
+    res.status(500).send("Error fetching single toy");
   }
 };
 
-/**
- * (read)
- * for getting toys by category and subcategory
- */
-
-
-/**
- * (Update)
- * for updating single toy
- */
 const updateToy = async (req, res) => {
   try {
-    console.log(req.body)
-    const id = req.params.id;
-    const toyUpdate = await toySchema.findById(id).exec();
-
-    toyUpdate.name = req?.body?.name;
-    toyUpdate.sellerName = req?.body?.sellerName;
-    toyUpdate.sellerEmail = req?.body?.sellerEmail;
-    toyUpdate.sellerImage = req?.body?.sellerImage;
-    toyUpdate.toyImage = req?.body?.toyImage;
-    toyUpdate.category = req?.body?.category;
-    toyUpdate.subcategory = req?.body?.subcategory;
-    toyUpdate.inStock = req?.body?.inStock;
-    toyUpdate.save();
-    console.log("pp"+ toyUpdate);
+    const toyUpdate = await toySchema.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
     res.status(200).json(toyUpdate);
   } catch (error) {
-    res.status(500).send(error);
+    console.error(error);
+    res.status(500).send("Error updating toy");
   }
 };
 
-/**
- * (delete)
- * for delete single toy
- */
 const deleteToy = async (req, res) => {
   try {
-    const toyDelete = await toySchema.deleteOne({ _id: req.params.id });
-    res.status(200).json(toyDelete);
+    await toySchema.findByIdAndDelete(req.params.id);
+    res.status(204).end();
   } catch (error) {
-    res.status(500).send(error);
+    console.error(error);
+    res.status(500).send("Error deleting toy");
   }
 };
 
