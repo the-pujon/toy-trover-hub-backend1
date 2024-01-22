@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1705903290365" clover="3.2.0">
-  <project timestamp="1705903290365" name="All files">
-    <metrics statements="266" coveredstatements="156" conditionals="32" coveredconditionals="9" methods="33" coveredmethods="18" elements="331" coveredelements="183" complexity="0" loc="266" ncloc="266" packages="5" files="15" classes="15"/>
+<coverage generated="1705907430414" clover="3.2.0">
+  <project timestamp="1705907430414" name="All files">
+    <metrics statements="268" coveredstatements="180" conditionals="30" coveredconditionals="10" methods="32" coveredmethods="24" elements="330" coveredelements="214" complexity="0" loc="268" ncloc="268" packages="5" files="15" classes="15"/>
     <package name="config">
       <metrics statements="18" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="2"/>
       <file name="config.js" path="F:\Toy Trove Hub\Backendd\src\config\config.js">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
       </file>
       <file name="db.js" path="F:\Toy Trove Hub\Backendd\src\config\db.js">
         <metrics statements="15" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="47" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="4" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="controllers">
-      <metrics statements="173" coveredstatements="96" conditionals="20" coveredconditionals="5" methods="23" coveredmethods="16"/>
+      <metrics statements="175" coveredstatements="120" conditionals="18" coveredconditionals="6" methods="22" coveredmethods="22"/>
       <file name="order.controller.js" path="F:\Toy Trove Hub\Backendd\src\controllers\order.controller.js">
         <metrics statements="37" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="47" count="3" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
-        <line num="58" count="3" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
         <line num="60" count="1" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
-        <line num="68" count="3" type="stmt"/>
+        <line num="68" count="4" type="stmt"/>
       </file>
       <file name="payment.controller.js" path="F:\Toy Trove Hub\Backendd\src\controllers\payment.controller.js">
         <metrics statements="43" coveredstatements="30" conditionals="6" coveredconditionals="3" methods="5" coveredmethods="5"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
@@ -82,13 +82,13 @@
         <line num="18" count="1" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="26" count="3" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
@@ -97,7 +97,7 @@
         <line num="46" count="1" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
-        <line num="54" count="3" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
         <line num="56" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
@@ -106,7 +106,7 @@
         <line num="63" count="1" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
         <line num="66" count="0" type="stmt"/>
-        <line num="71" count="3" type="stmt"/>
+        <line num="71" count="4" type="stmt"/>
         <line num="72" count="1" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
         <line num="74" count="1" type="stmt"/>
@@ -115,19 +115,19 @@
         <line num="80" count="1" type="stmt"/>
         <line num="82" count="0" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="87" count="3" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
       </file>
       <file name="toy.controller.js" path="F:\Toy Trove Hub\Backendd\src\controllers\toy.controller.js">
         <metrics statements="49" coveredstatements="26" conditionals="10" coveredconditionals="2" methods="5" coveredmethods="5"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="18" count="1" type="cond" truecount="1" falsecount="1"/>
@@ -149,72 +149,74 @@
         <line num="48" count="1" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
-        <line num="56" count="3" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
-        <line num="66" count="3" type="stmt"/>
+        <line num="66" count="4" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
         <line num="75" count="0" type="stmt"/>
         <line num="76" count="0" type="stmt"/>
-        <line num="80" count="3" type="stmt"/>
+        <line num="80" count="4" type="stmt"/>
         <line num="81" count="1" type="stmt"/>
         <line num="82" count="1" type="stmt"/>
         <line num="83" count="1" type="stmt"/>
         <line num="85" count="0" type="stmt"/>
         <line num="86" count="0" type="stmt"/>
-        <line num="90" count="3" type="stmt"/>
+        <line num="90" count="4" type="stmt"/>
       </file>
       <file name="user.controller.js" path="F:\Toy Trove Hub\Backendd\src\controllers\user.controller.js">
-        <metrics statements="44" coveredstatements="9" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
+        <metrics statements="46" coveredstatements="33" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="46" count="3" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="62" count="3" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
-        <line num="80" count="3" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="82" count="0" type="stmt"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="106" count="3" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
-        <line num="110" count="0" type="stmt"/>
-        <line num="115" count="3" type="stmt"/>
-        <line num="129" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="76" count="4" type="stmt"/>
       </file>
     </package>
     <package name="middlewares">
@@ -255,77 +257,77 @@
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="order.schema.js" path="F:\Toy Trove Hub\Backendd\src\model\order.schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
       </file>
       <file name="payment.schema.js" path="F:\Toy Trove Hub\Backendd\src\model\payment.schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
       <file name="toy.schema.js" path="F:\Toy Trove Hub\Backendd\src\model\toy.schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
       </file>
       <file name="user.schema.js" path="F:\Toy Trove Hub\Backendd\src\model\user.schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
       </file>
     </package>
     <package name="routes">
       <metrics statements="35" coveredstatements="35" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="order.routes.js" path="F:\Toy Trove Hub\Backendd\src\routes\order.routes.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
       </file>
       <file name="payment.routes.js" path="F:\Toy Trove Hub\Backendd\src\routes\payment.routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
       </file>
       <file name="toy.routes.js" path="F:\Toy Trove Hub\Backendd\src\routes\toy.routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
       </file>
       <file name="user.routes.js" path="F:\Toy Trove Hub\Backendd\src\routes\user.routes.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
       </file>
     </package>
   </project>
