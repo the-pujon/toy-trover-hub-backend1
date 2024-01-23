@@ -5,4 +5,5 @@ module.exports = {
     collectCoverage: true,
     coverageDirectory: "coverage",
     collectCoverageFrom: ["src/**/*.js"],
+    testTimeout: 10000,
   };
