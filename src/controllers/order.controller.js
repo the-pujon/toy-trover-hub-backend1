@@ -25,7 +25,7 @@ const createOrder = async (req, res) => {
 const getOrderByEmail = async (req, res) => {
     const userEmail = req.params.email;
     try {
-        const orders = await Order.find({ user: userEmail });
+        const orders = await Order.find({ userEmail: userEmail });
         res.status(200).json(orders);
     } catch (error) {
         res.status(500).json({ error: error.message });
