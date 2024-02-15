@@ -12,7 +12,7 @@ router.get("/", getAllUsers);
 router.get("/:email", getSingleUsers);
 router.post("/", createUser);
 router.patch("/:email", updateUser);
-router.delete("/:email", deleteUser);
+router.delete("/:id", deleteUser);
 router.post("/jwt", getJwtToken);
 
 module.exports = router;

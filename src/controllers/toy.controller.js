@@ -79,8 +79,8 @@ const updateToy = async (req, res) => {
 
 const deleteToy = async (req, res) => {
   try {
-    await toySchema.findByIdAndDelete(req.params.id);
-    res.status(204).end();
+  const toyDelete =  await toySchema.findByIdAndDelete(req.params.id);
+  res.status(200).json(toyDelete);
   } catch (error) {
     console.error(error);
     res.status(500).send("Error deleting toy");

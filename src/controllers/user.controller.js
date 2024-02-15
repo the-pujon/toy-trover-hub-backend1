@@ -53,8 +53,8 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   try {
-    await User.deleteOne({ email: req.params.email });
-    res.status(204).end();
+   const userDelete = await User.deleteOne({ _id: req.params.id });
+   res.status(200).json(userDelete);
   } catch (error) {
     console.error(error);
     res.status(500).send("Error deleting user");

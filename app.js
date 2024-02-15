@@ -31,7 +31,7 @@ app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/toys", toyRouter);
 app.use("/api/payments", paymentsRouter);
-app.use("/api/payments", paymentsRouter);
+//app.use("/api/payments", paymentsRouter);
 app.use("/api/orders", ordersRouter);
 
 const Order = require("./src/model/order.schema");
