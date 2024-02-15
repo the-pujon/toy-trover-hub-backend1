@@ -24,8 +24,10 @@ const verifyJWT = (req, res, next) => {
 //middleware for admin verify
 const verifyAdmin = async (req, res, next) => {
   email = req.decoded.email;
+  console.log(email)
   const query = { email: email };
   const user = await userCollection.findOne(query);
+  console.log(user)
   if (user?.role !== "admin") {
     return res.status(403).send({ error: true, message: "forbidden access" });
   }

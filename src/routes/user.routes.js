@@ -7,12 +7,13 @@ const {
   deleteUser,
   getJwtToken,
 } = require("../controllers/user.controller");
+const { verifyJWT, verifyAdmin } = require("../middlewares/auth");
 
-router.get("/", getAllUsers);
+router.get("/", verifyJWT, verifyAdmin, getAllUsers);
 router.get("/:email", getSingleUsers);
 router.post("/", createUser);
 router.patch("/:email", updateUser);
-router.delete("/:id", deleteUser);
+router.delete("/:id", verifyJWT, verifyAdmin, deleteUser);
 router.post("/jwt", getJwtToken);
 
 module.exports = router;
