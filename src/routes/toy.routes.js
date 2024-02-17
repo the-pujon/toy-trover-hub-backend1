@@ -5,13 +5,14 @@ const {
     updateToy,
     deleteToy,
   } = require("../controllers/toy.controller");
+const {verifyJWT, verifyAdmin}=require("../middlewares/auth");
 
   const router = require("express").Router();
 
   router.get("/", getToys);
   router.get("/:id", getSingleToy);
-  router.post("/", createToy);
-  router.patch("/:id", updateToy);
-  router.delete("/:id", deleteToy);
+  router.post("/", verifyJWT, verifyAdmin, createToy);
+  router.patch("/:id", verifyJWT, verifyAdmin, updateToy);
+  router.delete("/:id",verifyJWT, verifyAdmin, deleteToy);
 
   module.exports = router;
