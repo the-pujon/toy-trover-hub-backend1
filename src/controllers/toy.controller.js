@@ -64,6 +64,7 @@ const getSingleToy = async (req, res) => {
 };
 
 const updateToy = async (req, res) => {
+  console.log(req.body)
   try {
     const toyUpdate = await toySchema.findByIdAndUpdate(
       req.params.id,

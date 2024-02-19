@@ -12,7 +12,7 @@ const {verifyJWT, verifyAdmin}=require("../middlewares/auth");
   router.get("/", getToys);
   router.get("/:id", getSingleToy);
   router.post("/", verifyJWT, verifyAdmin, createToy);
-  router.patch("/:id", verifyJWT, verifyAdmin, updateToy);
+  router.put("/:id", updateToy);
   router.delete("/:id",verifyJWT, verifyAdmin, deleteToy);
 
   module.exports = router;

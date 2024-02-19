@@ -37,7 +37,7 @@ const getAllPayments = async (req, res) => {
 const getPaymentByEmail = async (req, res) => {
   try {
     const { email } = req.params;
-    const payment = await Payment.findOne({ email });
+    const payment = await Payment.find({ email });
 
     if (!payment) {
       return res.status(404).json({ message: "Payment not found" });
