@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 const corsOptions = {
-  origin: `${'http://localhost:5173/' || process.env.FRONTEND_URL}`,
+  origin: `${'http://localhost:5173/'}`,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
